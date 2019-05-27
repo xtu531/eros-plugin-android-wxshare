@@ -14,7 +14,10 @@ public class ShareUtil {
                 return SHARE_MEDIA.WEIXIN;
             case SharePlatformCatalog.P_WECHATTIMELINE:
                 return SHARE_MEDIA.WEIXIN_CIRCLE;
-
+            case SharePlatformCatalog.P_ZONE:
+                return SHARE_MEDIA.QZONE;
+            case SharePlatformCatalog.P_QQ:
+                return SHARE_MEDIA.QQ;
         }
         return null;
     }

@@ -13,7 +13,6 @@ public enum ShareMediaType {
     MUSIC("Music", "音乐类型"),
     VIDEO("Video", "视频类型"),
     MINIPROGRAM("MiniProgram", "小程序");
-
     private String key;
     private String value;
 

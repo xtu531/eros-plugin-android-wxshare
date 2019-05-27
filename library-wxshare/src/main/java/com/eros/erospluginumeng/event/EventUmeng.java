@@ -24,7 +24,7 @@ public class EventUmeng {
     public void initUM(Context context, String androidAppKey) {
         if (!TextUtils.isEmpty(androidAppKey)) {
 //            Config.DEBUG = true;
-//            UMConfigure.setLogEnabled(true);
+            // UMConfigure.setLogEnabled(true);
             UMConfigure.init(context, androidAppKey, "umeng", UMConfigure.DEVICE_TYPE_PHONE, "");
 //            MobclickAgent.setDebugMode(DebugableUtil.isDebug());
             MobclickAgent.openActivityDurationTrack(false);
@@ -40,6 +40,11 @@ public class EventUmeng {
         PlatformConfig.setWeixin(bean.getAppKey(), bean.getAppSecret());
         WXApiModule.getInstans().onCreateWXApi(context, bean.getAppKey());
 
+    }
+    public void initQQ(Context context, String params) {
+        UmengPlagformBean bean = ManagerFactory.getManagerService(ParseManager.class).parseObject
+                (params, UmengPlagformBean.class);
+        PlatformConfig.setQQZone(bean.getAppKey(), bean.getAppSecret());
     }
 
 

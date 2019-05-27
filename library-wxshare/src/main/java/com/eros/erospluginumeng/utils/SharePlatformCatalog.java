@@ -12,5 +12,9 @@ public class SharePlatformCatalog {
     public static final String P_WECHATTIMELINE="WechatTimeLine";
     //剪切板
     public static final String P_PASTEBOARD="Pasteboard";
+    //QQ
+    public static final String P_QQ = "qq";
+    //ZONE
+    public static final String P_ZONE = "zone";
 
 }

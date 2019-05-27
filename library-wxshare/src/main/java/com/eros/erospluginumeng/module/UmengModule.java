@@ -30,7 +30,11 @@ public class UmengModule extends WXModule {
         EventUmeng umeng = new EventUmeng();
         umeng.initPlatform(mWXSDKInstance.getContext(), params);
     }
-
+    @JSMethod
+    public void initQQ(String params) {
+        EventUmeng umeng = new EventUmeng();
+        umeng.initQQ(mWXSDKInstance.getContext(), params);
+    }
     @JSMethod
     public void share(String params, JSCallback success, JSCallback fail) {
         WeexEventBean weexEventBean = new WeexEventBean();
